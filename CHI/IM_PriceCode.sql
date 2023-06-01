@@ -1,0 +1,28 @@
+CREATE TABLE IM_PriceCode
+(
+    PriceCodeRecord    varchar(1)  NOT NULL,
+    PriceCode          varchar(4)  NOT NULL,
+    ItemCode           varchar(30) NOT NULL,
+    CustomerPriceLevel varchar(1)  NOT NULL,
+    ARDivisionNo       varchar(2)  NOT NULL,
+    CustomerNo         varchar(20) NOT NULL,
+    PriceCodeDesc      varchar(25)    DEFAULT NULL,
+    PricingMethod      varchar(1)     DEFAULT NULL,
+    BreakQuantity1     decimal(8, 0)  DEFAULT NULL,
+    BreakQuantity2     decimal(8, 0)  DEFAULT NULL,
+    BreakQuantity3     decimal(8, 0)  DEFAULT NULL,
+    BreakQuantity4     decimal(8, 0)  DEFAULT NULL,
+    BreakQuantity5     decimal(8, 0)  DEFAULT NULL,
+    DiscountMarkup1    decimal(15, 6) DEFAULT NULL,
+    DiscountMarkup2    decimal(15, 6) DEFAULT NULL,
+    DiscountMarkup3    decimal(15, 6) DEFAULT NULL,
+    DiscountMarkup4    decimal(15, 6) DEFAULT NULL,
+    DiscountMarkup5    decimal(15, 6) DEFAULT NULL,
+    DateCreated        date           DEFAULT NULL,
+    TimeCreated        varchar(8)     DEFAULT NULL,
+    UserCreatedKey     varchar(10)    DEFAULT NULL,
+    DateUpdated        date           DEFAULT NULL,
+    TimeUpdated        varchar(8)     DEFAULT NULL,
+    UserUpdatedKey     varchar(10)    DEFAULT NULL,
+    PRIMARY KEY (`PriceCodeRecord`, `PriceCode`, `ItemCode`, `CustomerPriceLevel`, `ARDivisionNo`, `CustomerNo`)
+)

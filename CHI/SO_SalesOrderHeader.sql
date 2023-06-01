@@ -1,4 +1,4 @@
-CREATE TABLE c2.SO_SalesOrderHeader
+CREATE TABLE SO_SalesOrderHeader
 (
     SalesOrderNo                  varchar(7) NOT NULL,
     OrderDate                     date           DEFAULT NULL,
@@ -139,5 +139,5 @@ CREATE TABLE c2.SO_SalesOrderHeader
     UDF_VENDOR_NO                 varchar(30)    DEFAULT NULL,
     UDF_Z7                        varchar(20)    DEFAULT NULL,
     PayBalance                    varchar(1)     DEFAULT NULL,
-    PRIMARY KEY (SalesOrderNo)
+    PRIMARY KEY (`SalesOrderNo`)
 )
