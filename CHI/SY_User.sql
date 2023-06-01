@@ -44,7 +44,7 @@ CREATE TABLE SY_User
     RetainModuleOnCompanyChange varchar(1)    DEFAULT NULL,
     ThemeCode                   varchar(20)   DEFAULT NULL,
     MapService                  varchar(1)    DEFAULT NULL,
-    PRIMARY KEY (UserKey),
+    PRIMARY KEY (UserKey)
 );
 
 CREATE INDEX KEY1 ON SY_User (UserCode);
