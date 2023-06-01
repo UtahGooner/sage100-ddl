@@ -1,0 +1,32 @@
+CREATE TABLE AR_Salesperson
+(
+    SalespersonDivisionNo  varchar(2) NOT NULL,
+    SalespersonNo          varchar(4) NOT NULL,
+    SalespersonName        varchar(30)   DEFAULT NULL,
+    AddressLine1           varchar(40)   DEFAULT NULL,
+    AddressLine2           varchar(40)   DEFAULT NULL,
+    AddressLine3           varchar(40)   DEFAULT NULL,
+    City                   varchar(30)   DEFAULT NULL,
+    State                  varchar(2)    DEFAULT NULL,
+    ZipCode                varchar(10)   DEFAULT NULL,
+    CountryCode            varchar(3)    DEFAULT NULL,
+    TelephoneNo            varchar(20)   DEFAULT NULL,
+    TelephoneExt           varchar(6)    DEFAULT NULL,
+    EmailAddress           varchar(50)   DEFAULT NULL,
+    SalesManagerDivisionNo varchar(2)    DEFAULT NULL,
+    SalesManagerNo         varchar(4)    DEFAULT NULL,
+    CommissionRate         decimal(8, 3) DEFAULT NULL,
+    SalesManagerCommRate   decimal(8, 3) DEFAULT NULL,
+    DateCreated            date          DEFAULT NULL,
+    TimeCreated            varchar(8)    DEFAULT NULL,
+    UserCreatedKey         varchar(10)   DEFAULT NULL,
+    DateUpdated            date          DEFAULT NULL,
+    TimeUpdated            varchar(8)    DEFAULT NULL,
+    UserUpdatedKey         varchar(10)   DEFAULT NULL,
+    CRMUserID              varchar(11)   DEFAULT NULL,
+    UserKey                varchar(10)   DEFAULT NULL,
+    UDF_TERMINATED         varchar(1)    DEFAULT NULL,
+    TelephoneType          varchar(1)    DEFAULT NULL,
+    PRIMARY KEY (SalespersonDivisionNo, SalespersonNo)
+);
+
