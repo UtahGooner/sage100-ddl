@@ -1,5 +1,17 @@
 {
   "name": "sage100-ddl",
   "version": "1.0.1",
-  "dependencies": {}
+  "scripts": {
+    "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.4.0"
+  },
+  "dependencies": {},
+  "auto-changelog": {
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
+  }
+
 }
