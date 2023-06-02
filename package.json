@@ -1,6 +1,6 @@
 {
   "name": "sage100-ddl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
@@ -13,5 +13,4 @@
     "unreleased": true,
     "commitLimit": false
   }
-
 }
