@@ -3,11 +3,11 @@ CREATE TABLE WO2_WorkOrderMaterialDetail
     WorkOrder              varchar(7)     DEFAULT NULL,
     PreviousIndexNumber    decimal(11, 0) DEFAULT NULL,
     LinkToNextLine         decimal(11, 0) DEFAULT NULL,
-    Revision               CHAR           DEFAULT NULL,
-    StepNumber             CHAR           DEFAULT NULL,
-    UM                     CHAR           DEFAULT NULL,
-    ItemDescription        CHAR           DEFAULT NULL,
-    Whse                   CHAR           DEFAULT NULL,
+    Revision               char(3)        DEFAULT NULL,
+    StepNumber             char(4)        DEFAULT NULL,
+    UM                     char(4)        DEFAULT NULL,
+    ItemDescription        char(30)       DEFAULT NULL,
+    Whse                   char(3)        DEFAULT NULL,
     ComponentItemNumber    varchar(30)    DEFAULT NULL,
     QtyParent              decimal(15, 4) DEFAULT NULL,
     UMconversion           decimal(15, 4) DEFAULT NULL,
@@ -20,5 +20,5 @@ CREATE TABLE WO2_WorkOrderMaterialDetail
     FixedOvhdCosts         decimal(15, 4) DEFAULT NULL,
     VariableOvhdCosts      decimal(15, 4) DEFAULT NULL,
     StdFixedOverheadAmount decimal(15, 4) DEFAULT NULL,
-    StdVarOverheadAmount   decimal(15, 4) DEFAULT NULL,
+    StdVarOverheadAmount   decimal(15, 4) DEFAULT NULL
 );

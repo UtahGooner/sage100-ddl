@@ -1,9 +1,9 @@
 CREATE TABLE MP2_ProjectedDemands
 (
-    ItemNumber                CHAR NOT NULL,
-    WarehouseNumber           CHAR NOT NULL,
-    DivisionNumber            CHAR NOT NULL,
-    CustomerNumber            CHAR NOT NULL,
+    ItemNumber                char(30) NOT NULL,
+    WarehouseNumber           char(3)  NOT NULL,
+    DivisionNumber            char(2)  NOT NULL,
+    CustomerNumber            char(20) NOT NULL,
     ProjectionType            varchar(1)     DEFAULT NULL,
     ForecastJanuary           decimal(15, 4) DEFAULT NULL,
     ForecastFebruary          decimal(15, 4) DEFAULT NULL,
